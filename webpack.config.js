@@ -9,5 +9,20 @@ module.exports = {
     output: {
         path: path.resolve(build_path),
         filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+            {
+                loader: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/
+            }
+        ]
+    },
+    devServer: {
+        host: '0.0.0.0',
+        port: 3500,
+        contentBase: path.resolve(build_path),
+        inline: true
     }
 }
