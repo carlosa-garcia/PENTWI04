@@ -1,6 +1,7 @@
 node_modules/
 build/bundle.js
 npm-debug.log
+npm_install.txt
 *.swp
 *.swap
 *.old

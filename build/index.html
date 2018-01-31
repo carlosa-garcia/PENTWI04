@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="us">
     <head>
         <meta charset="utf-8">
         <title>ES6</title>
+        <link rel="stylesheet" href="main.css">
     </head>
+
     <body>
+
+        <nav id="top-menu" class="menu">
+            <ul class="top-menu-ul">
+                <li>Ejemplo de herencia de JS</li>
+            </ul>
+        </nav>
+
+        <section class="body-wrapper">
+            <h1 class="form-header">New Guest</h1>
+            <section class="bio-form">
+                <form id="guest-form" method="POST" action="#">
+                    <label for="guest-first-name">Guest First Name: </label>
+                    <input id="guest-first-name" name="guest-first-name" type="text" class="guest-name">
+                    <br>
+                    <label for="guest-last-name">Guest Last Name: </label>
+                    <input id="guest-last-name" name="guest-last-name" type="text" class="guest-name">
+                    <br>
+                    <label for="guest-age">Guest Age: </label>
+                    <input id="guest-age" name="guest-age" type="text" class="guest-age">
+                    <br>
+                    <label for="guest-gender">Guest Gender:</label>
+                    <select id="guest-gender" class="guest-gender" name="guest-gender">
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                    </select>
+                    <br>
+                    <label for="guest-interests">Guest Interests: </label>
+                    <textarea id="guest-interests" name="guest-interests" type="text" class="guest-age"></textarea>
+                    <br>
+                    <div id="submit" class="button">Registrarse</div>
+                </form>
+            </section>
+            <section id="bio-display">
+            </section>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="bundle.js"></script>
     </body>
 </html>
